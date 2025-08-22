@@ -1,0 +1,10 @@
+@use 'base/normalize';
+@use 'base/variables' as *;
+@use 'base/mixins' as *;
+@use 'base/globales';
+@use 'base/utilidades' as *;
+
+/** UI **/
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/navegacion';

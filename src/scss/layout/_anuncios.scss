@@ -1,0 +1,49 @@
+@use "sass:color";
+
+@use "../base/mixins" as m;
+@use "../base/variables" as v;
+
+@include m.tablet {
+  .contenedor-anuncios {
+    @include m.grid(3, 2rem);
+  }
+}
+
+.anuncio {
+  background-color: color.adjust(v.$gris, $lightness: 5%);
+  border: 1px solid color.adjust(v.$gris, $lightness: -10%);
+
+  .contenido-anuncio {
+    padding: 2rem;
+  }
+
+  h3,
+  p {
+    margin: 0;
+  }
+  .precio {
+    color: v.$azul-claro;
+    font-weight: v.$bold;
+    font-size: 3rem;
+  }
+}
+
+.iconos-caracteristicas {
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+  li {
+    flex: 1; // cada uno recibe un pixel de los que hay disponible
+    display: flex;
+
+    img {
+      flex: 0 0 5rem; // no crece, no se encoge y mide 5rem
+      margin-right: 1rem;
+    }
+
+    p {
+      font-weight: v.$black;
+    }
+  }
+}

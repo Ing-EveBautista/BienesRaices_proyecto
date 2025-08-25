@@ -3,8 +3,19 @@
 @use 'base/mixins' as *;
 @use 'base/globales';
 @use 'base/utilidades' as *;
+@use 'base/botones';
+
 
 /** UI **/
 @use 'layout/header';
 @use 'layout/footer';
 @use 'layout/navegacion';
+@use 'layout/iconos';
+@use 'layout/anuncios';
+@use 'layout/contactar';
+@use 'layout/inferior';
+@use 'layout/testimoniales';
+
+
+/**PAGINAS INTERNAS**/
+@use 'internas/nosotros';

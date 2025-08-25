@@ -1,34 +1,38 @@
-@use '../base/variables' as v;
-@use '../base/mixins' as m;
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
 
-.barra{
-    display: flex;
-    flex-direction: column;
-    padding-top: 3rem;
-    @include m.tablet{
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.barra {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  @include m.tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-.navegacion{
-    @include m.tablet{
-        display: flex;
-        align-items: center;
-    }
-    a{
-        color: v.$blanco;
-        text-decoration: node;
-        font-size: 2.2rem;
-        display: block;
-        text-align: center;
+.navegacion {
+  @include m.tablet {
+    display: flex;
+    align-items: center; // centrar verticalmente con el flex
+  }
+  a {
+    color: v.$blanco;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+    text-align: center;
 
-        @include m.tablet{
-            margin-right: 2rem;
+    @include m.tablet {
+      margin-right: 2rem;
 
-            :last-of-type{
-                margin-right: 0;
-            }
-        }
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
+    &:hover {
+      color: v.$azul-claro;
+      transition: ease 0.2s all;
+    }
+  }
 }

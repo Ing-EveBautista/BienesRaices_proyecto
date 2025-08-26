@@ -1,21 +1,20 @@
-@use 'base/normalize';
-@use 'base/variables' as *;
-@use 'base/mixins' as *;
-@use 'base/globales';
-@use 'base/utilidades' as *;
-@use 'base/botones';
-
+@use "base/normalize";
+@use "base/variables" as *;
+@use "base/mixins" as *;
+@use "base/globales";
+@use "base/utilidades" as *;
+@use "base/botones";
 
 /** UI **/
-@use 'layout/header';
-@use 'layout/footer';
-@use 'layout/navegacion';
-@use 'layout/iconos';
-@use 'layout/anuncios';
-@use 'layout/contactar';
-@use 'layout/inferior';
-@use 'layout/testimoniales';
-
+@use "layout/header";
+@use "layout/footer";
+@use "layout/navegacion";
+@use "layout/iconos";
+@use "layout/anuncios";
+@use "layout/contactar";
+@use "layout/inferior";
+@use "layout/testimoniales";
+@use "layout/formularios";
 
 /**PAGINAS INTERNAS**/
-@use 'internas/nosotros';
+@use "internas/nosotros";

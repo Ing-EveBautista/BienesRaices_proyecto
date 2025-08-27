@@ -13,7 +13,16 @@
   .dark-mode-boton {
     width: 3rem;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    filter: invert(100%);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include m.tablet {
+      margin-top: 0;
+    }
   }
 }
 
@@ -25,13 +34,16 @@
   @include m.tablet {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
   }
 }
 
 .navegacion {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0.3s ease-in-out, opacity 0.5s linear;
+  height: 0;
+  transition: visibility 0.3s ease-in-out, opacity 0.5s linear,
+    height 0.5s linear;
   @include m.tablet {
     display: flex;
     align-items: center; // centrar verticalmente con el flex
@@ -73,4 +85,5 @@
 .mostrar {
   visibility: visible;
   opacity: 1;
+  height: auto;
 }

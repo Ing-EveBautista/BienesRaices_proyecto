@@ -1,4 +1,10 @@
 <?php
+//Base de datos
+
+require '../../includes/config/database.php';
+$db = conectarDB();
+
+
 require '../../includes/funciones.php';
 incluirTemplate('header');
 ?>
@@ -8,12 +14,12 @@ incluirTemplate('header');
 
   <a href="/admin" class="boton boton-azul-claro">Volver</a>
 
-  <form class="formulario">
+  <form class="formulario" method="GET" action="/admin/propiedades/crear.php">
     <fieldset>
       <legend>Información General</legend>
 
       <label for="titulo">Título:</label>
-      <input type="text" id="titulo" placeholder="Título Propiedad" />
+      <input type="text" id="titulo" name="titulo" placeholder="Título Propiedad" />
 
       <label for="precio">Precio:</label>
       <input type="number" id="precio" placeholder="Precio Propiedad" />

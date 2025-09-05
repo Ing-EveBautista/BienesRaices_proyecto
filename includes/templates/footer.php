@@ -2,7 +2,7 @@
     <div class="contenedor contenedor-header">
         <nav class="navegacion">
             <a href="nosotros.php">Nosotros</a>
-            <a href="anuncions.php">Anuncions</a>
+            <a href="anuncios.php">anuncios</a>
             <a href="blog.php">Blog</a>
             <a href="contacto.php">Contacto</a>
         </nav>

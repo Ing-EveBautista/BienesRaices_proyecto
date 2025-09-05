@@ -12,3 +12,13 @@
 .boton-azul-claro {
   @include m.boton(v.$azul-claro, inline-block);
 }
+
+.boton-rojo-block{
+  @include m.boton(v.$rojo, block);
+  width: 100%;
+}
+
+
+.boton-verde-block{
+  @include m.boton(v.$verde, block);
+}

@@ -23,11 +23,13 @@
           <img class="dark-mode-boton" src="/build/img/dark-mode.svg" />
           <nav class="navegacion">
             <a href="nosotros.php">Nosotros</a>
-            <a href="anuncions.php">Anuncions</a>
+            <a href="anuncios.php">anuncios</a>
             <a href="blog.php">Blog</a>
             <a href="contacto.php">Contacto</a>
           </nav>
         </div>
       </div>
+
+      <?php echo $inicio ? "<h1>Venta de Casas y Departamentos Exclucivos de Lujo </h1>" : ''; ?>
     </div>
   </header>

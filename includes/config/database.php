@@ -1,8 +1,9 @@
 <?php
-function conectarDB(): mysqli{
+function conectarDB(): mysqli
+{
     $db = mysqli_connect('localhost', 'root', 'root', 'bienesraices_crud_');
 
-    if(!$db){
+    if (!$db) {
         echo "error no se pudo conectar";
         exit;
     }
